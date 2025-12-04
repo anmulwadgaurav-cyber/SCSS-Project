@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+main section {
+  height: 100%;
+  flex-grow: 1;
+  /*flex-grow is basically how much a flex item will grow relative to the rest of the flex items inside the same container means with respect to parent-container in this case parent is main so parent has 100% height & width, example: if we have 3 flex items and the first one has flex-grow: 1, the second one has flex-grow: 2 and the third one has flex-grow: 1, then the second one will take up twice as much space as the first and third ones.
+      */
+  background-color: red;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+main section:nth-child(1) {
+  background-image: url("https://i.pinimg.com/736x/01/19/2f/01192f7862213dc9fa127617decedcc9.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.7s;
+  cursor: pointer;
+}
+main section:nth-child(2) {
+  background-image: url("https://i.pinimg.com/736x/6d/ab/d2/6dabd294da8f4a3ce9c739d91ada3d2a.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.7s;
+  cursor: pointer;
+}
+main section:nth-child(3) {
+  background-image: url("https://i.pinimg.com/736x/ee/0f/34/ee0f34588843a6710416e39be52490fb.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.7s;
+  cursor: pointer;
+}
+main section:nth-child(4) {
+  background-image: url("https://i.pinimg.com/1200x/fa/99/00/fa9900c8047d5c4b5f1c2f1ed2f66b86.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.7s;
+  cursor: pointer;
+}
+main section:nth-child(5) {
+  background-image: url("https://i.pinimg.com/736x/af/96/c8/af96c81276cc8912688676586dbfe61f.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.7s;
+  cursor: pointer;
+}
+main section:hover {
+  background-position: top;
+  flex-grow: 3;
+}/*# sourceMappingURL=style.css.map */
